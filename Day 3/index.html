@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frontend Mentor https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI">
+    <link rel="icon" href="./images/favicon-32x32.png" />
+    <title>Interactive rating component</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <div class="circle" id="disabled"><img src="./images/icon-star.svg" alt=""></div>
+        <h1>How did we do?</h1>
+        <span>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</span>
+        <div class="circles">
+            <button class="circle" id="mark1"><b>1</b></button>
+            <button class="circle" id="mark2"><b>2</b></button>
+            <button class="circle" id="mark3"><b>3</b></button>
+            <button class="circle" id="mark4"><b>4</b></button>
+            <button class="circle" id="mark5"><b>5</b></button>
+        </div>
+        <button aria-label="submit" class="submit">SUBMIT</button>
+    </main>
+    <main class="main_S" id="remove">
+        <img class="illustration" src="./images/illustration-thank-you.svg" alt="">
+
+        <div class="result">
+            <span id="mark_S">You selected $ out of 5</span>
+        </div>
+        <h1>Thank you!</h1>
+        <span>We appreciate you taking the time to five a rating. If you ever need more support, don't hesitate to get in touch!</span>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

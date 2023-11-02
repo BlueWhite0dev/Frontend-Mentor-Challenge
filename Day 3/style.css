@@ -1,0 +1,121 @@
+:root{
+    --font_Montserrat: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #121417;
+    max-height: 100svh;
+    min-height: 85svh;
+
+    max-width: 100svw;
+    min-width: 85svw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 25px;
+}
+main{
+    background: linear-gradient(#232A34,#171E28);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    min-height: 30svh;
+}
+
+.circle{
+    background-color: #232E37;
+    height: 42px;
+    width: 44px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: none;
+}
+#disabled{
+    pointer-events: none;
+}
+.circle:hover{
+    background-color: #959eac;
+
+    cursor: pointer;
+}.circle:hover b, #A_mark1 b, #A_mark2 b, #A_mark3 b, #A_mark4 b, #A_mark5 b{
+    color: #ffffff;
+}
+#A_mark1, #A_mark2, #A_mark3, #A_mark4, #A_mark5{
+    background-color: #fb7413;
+}
+h1{
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-family: var(--font_Montserrat);
+    font-weight: 700;
+}
+span{
+    color: #959eac;
+    line-height: 1.4em;
+    font-family: var(--font_Montserrat);
+}
+b{
+    color: #959eac;
+    font-family: var(--font_Montserrat);
+    font-weight: 400;
+}
+.circles{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.submit{
+    background-color: #fb7413;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
+    width: 100%;
+    padding: 20px 10px;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    font-family: var(--font_Montserrat);
+}
+#submitCheck:hover{
+    background-color: #ffffff;
+    color: #fb7413;
+}
+.main_S{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main_S span{
+    text-align: center;
+}
+#remove{
+    display: none;
+}
+#mark_S{
+    color: #fb7413;
+    text-align: center;
+}
+.result{
+    padding: 5px 15px;
+    background-color: #232E37;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+.illustration{
+    height: 25%;
+    width: 25%;
+    padding-bottom: 15px;
+}
+@media (min-width: 600px){
+    main{
+        min-width: 20svw;
+        max-width: 25svw;
+    }
+}
